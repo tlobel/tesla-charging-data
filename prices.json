@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-09-04T04:00:00Z",
+  "verifiedAt": "2026-09-03",
+  "stations": [
+    {
+      "id": "eon-liberecka",
+      "dayPriceCZKPerKWh": 9.5,
+      "nightPriceCZKPerKWh": 8.0
+    },
+    {
+      "id": "pre-vystaviste",
+      "dayPriceCZKPerKWh": 14.0,
+      "nightPriceCZKPerKWh": null
+    },
+    {
+      "id": "pre-borislavka",
+      "dayPriceCZKPerKWh": 9.0,
+      "nightPriceCZKPerKWh": null
+    },
+    {
+      "id": "cez-visionary",
+      "dayPriceCZKPerKWh": 12.9,
+      "nightPriceCZKPerKWh": null
+    }
+  ]
+}
