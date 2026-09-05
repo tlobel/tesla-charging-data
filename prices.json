@@ -1,27 +1,159 @@
 {
-  "schemaVersion": 1,
-  "updatedAt": "2026-09-04T04:00:00Z",
-  "verifiedAt": "2026-09-03",
-  "stations": [
+  "schemaVersion": 2,
+  "updatedAt": "2026-09-05T13:02:50Z",
+  "verifiedAt": "2026-09-05",
+  "sources": [
     {
-      "id": "eon-liberecka",
+      "providerID": "eon",
+      "documentURL": "https://www.eon-drive.cz/wp-content/uploads/2026/06/2606_Cenik-dobijeni-E.ON-Drive.pdf",
+      "effectiveFrom": "2026-06-18",
+      "documentSHA256": "a73a5f52d90bc590d2657957bce70dd34264dfc10a6241a3148254e595b2da05"
+    },
+    {
+      "providerID": "pre",
+      "documentURL": "https://www.pre.cz/Files/emobilita/cenik/cenik-dobijeni-v-siti-pre-point-aktualne-platny/",
+      "effectiveFrom": "2025-12-01",
+      "documentSHA256": "3692fd062a7fdc09313d4d4e52389aecbd8233d2732ffa8b984510369dd70865"
+    },
+    {
+      "providerID": "cez",
+      "documentURL": "https://futurego.cz/webpublic/file/edee/futurego/prilohy/smlouvy/cenik_elektromobilita_od_1.6.2026.pdf",
+      "effectiveFrom": "2026-06-01",
+      "documentSHA256": "95d8414ea6c0c64a3a1985a3076f46000b6eafb542f2ef366962f292527de2c7"
+    }
+  ],
+  "tariffs": [
+    {
+      "id": "eon-registered-ac-group-1",
+      "providerID": "eon",
+      "tariffName": "E.ON Drive · Stálý plat",
+      "connectorKind": "ac",
+      "maximumPowerKW": 100,
       "dayPriceCZKPerKWh": 9.5,
-      "nightPriceCZKPerKWh": 8.0
+      "nightPriceCZKPerKWh": 8.0,
+      "occupancyFreeMinutes": 480,
+      "occupancyFeeCZKPerMinute": 2,
+      "nightOccupancyFeeWaived": true
     },
     {
-      "id": "pre-vystaviste",
-      "dayPriceCZKPerKWh": 14.0,
-      "nightPriceCZKPerKWh": null
+      "id": "eon-registered-ccs-group-1",
+      "providerID": "eon",
+      "tariffName": "E.ON Drive · Stálý plat",
+      "connectorKind": "ccs",
+      "maximumPowerKW": 100,
+      "dayPriceCZKPerKWh": 9.5,
+      "nightPriceCZKPerKWh": 8.0,
+      "occupancyFreeMinutes": 120,
+      "occupancyFeeCZKPerMinute": 2,
+      "nightOccupancyFeeWaived": true
     },
     {
-      "id": "pre-borislavka",
+      "id": "eon-registered-ccs-group-2",
+      "providerID": "eon",
+      "tariffName": "E.ON Drive · Stálý plat",
+      "connectorKind": "ccs",
+      "maximumPowerKW": 200,
+      "dayPriceCZKPerKWh": 13.0,
+      "nightPriceCZKPerKWh": 10.0,
+      "occupancyFreeMinutes": 60,
+      "occupancyFeeCZKPerMinute": 2,
+      "nightOccupancyFeeWaived": false
+    },
+    {
+      "id": "eon-registered-ccs-group-3",
+      "providerID": "eon",
+      "tariffName": "E.ON Drive · Stálý plat",
+      "connectorKind": "ccs",
+      "maximumPowerKW": 400,
+      "dayPriceCZKPerKWh": 16.9,
+      "nightPriceCZKPerKWh": 12.0,
+      "occupancyFreeMinutes": 30,
+      "occupancyFeeCZKPerMinute": 2,
+      "nightOccupancyFeeWaived": false
+    },
+    {
+      "id": "pre-start-ac",
+      "providerID": "pre",
+      "tariffName": "PRE Charge START",
+      "connectorKind": "ac",
+      "maximumPowerKW": 49,
       "dayPriceCZKPerKWh": 9.0,
-      "nightPriceCZKPerKWh": null
+      "nightPriceCZKPerKWh": null,
+      "occupancyFreeMinutes": 180,
+      "occupancyFeeCZKPerMinute": 1.0,
+      "nightOccupancyFeeWaived": false
     },
     {
-      "id": "cez-visionary",
+      "id": "pre-start-dc",
+      "providerID": "pre",
+      "tariffName": "PRE Charge START",
+      "connectorKind": "ccs",
+      "maximumPowerKW": 149,
+      "dayPriceCZKPerKWh": 12.0,
+      "nightPriceCZKPerKWh": null,
+      "occupancyFreeMinutes": 60,
+      "occupancyFeeCZKPerMinute": 2.0,
+      "nightOccupancyFeeWaived": false
+    },
+    {
+      "id": "pre-start-ufc",
+      "providerID": "pre",
+      "tariffName": "PRE Charge START",
+      "connectorKind": "ccs",
+      "maximumPowerKW": 1000,
+      "dayPriceCZKPerKWh": 14.0,
+      "nightPriceCZKPerKWh": null,
+      "occupancyFreeMinutes": 30,
+      "occupancyFeeCZKPerMinute": 2.0,
+      "nightOccupancyFeeWaived": false
+    },
+    {
+      "id": "cez-basic-ac-49",
+      "providerID": "cez",
+      "tariffName": "futurego BASIC",
+      "connectorKind": "ac",
+      "maximumPowerKW": 49,
+      "dayPriceCZKPerKWh": 9.9,
+      "nightPriceCZKPerKWh": null,
+      "occupancyFreeMinutes": 480,
+      "occupancyFeeCZKPerMinute": 2.0,
+      "nightOccupancyFeeWaived": false
+    },
+    {
+      "id": "cez-basic-ccs-49",
+      "providerID": "cez",
+      "tariffName": "futurego BASIC",
+      "connectorKind": "ccs",
+      "maximumPowerKW": 49,
+      "dayPriceCZKPerKWh": 9.9,
+      "nightPriceCZKPerKWh": null,
+      "occupancyFreeMinutes": 480,
+      "occupancyFeeCZKPerMinute": 2.0,
+      "nightOccupancyFeeWaived": false
+    },
+    {
+      "id": "cez-basic-ccs-149",
+      "providerID": "cez",
+      "tariffName": "futurego BASIC",
+      "connectorKind": "ccs",
+      "maximumPowerKW": 149,
       "dayPriceCZKPerKWh": 12.9,
-      "nightPriceCZKPerKWh": null
+      "nightPriceCZKPerKWh": null,
+      "occupancyFreeMinutes": 90,
+      "occupancyFeeCZKPerMinute": 2.0,
+      "nightOccupancyFeeWaived": false
+    },
+    {
+      "id": "cez-basic-ccs-1000",
+      "providerID": "cez",
+      "tariffName": "futurego BASIC",
+      "connectorKind": "ccs",
+      "maximumPowerKW": 1000,
+      "dayPriceCZKPerKWh": 15.9,
+      "nightPriceCZKPerKWh": null,
+      "occupancyFreeMinutes": 45,
+      "occupancyFeeCZKPerMinute": 2.0,
+      "nightOccupancyFeeWaived": false
     }
   ]
 }
